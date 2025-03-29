@@ -1,0 +1,110 @@
+[0.007s] Invoking command in '/home/alberto/ros2_ws/src/sub/build/sub': CMAKE_PREFIX_PATH=/home/alberto/ros2_ws/install/uuv_control:/home/alberto/ros2_ws/install/sub:/home/alberto/ros2_ws/install/pid:/opt/ros/humble:/home/alberto/ros2_ws/install/catkin:/home/alberto/ros2_ws/install/Vanttec_CANLib /usr/bin/cmake /home/alberto/ros2_ws/src/sub -DCMAKE_INSTALL_PREFIX=/home/alberto/ros2_ws/src/sub/install/sub
+[0.016s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.109s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.128s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.130s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.134s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.141s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.150s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.172s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.173s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.241s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.274s] -- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)
+[0.274s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.283s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.294s] -- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.297s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.298s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.355s] -- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.431s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.490s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.491s] -- Configured cppcheck include dirs: 
+[0.491s] -- Configured cppcheck exclude dirs and/or files: 
+[0.492s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.493s] -- Added test 'lint_cmake' to check CMake code style
+[0.495s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.500s] -- Added test 'uncrustify' to check C / C++ code style
+[0.500s] -- Configured uncrustify additional arguments: 
+[0.501s] -- Added test 'xmllint' to check XML markup files
+[0.502s] -- Configuring done
+[0.511s] -- Generating done
+[0.516s] -- Build files have been written to: /home/alberto/ros2_ws/src/sub/build/sub
+[0.522s] Invoked command in '/home/alberto/ros2_ws/src/sub/build/sub' returned '0': CMAKE_PREFIX_PATH=/home/alberto/ros2_ws/install/uuv_control:/home/alberto/ros2_ws/install/sub:/home/alberto/ros2_ws/install/pid:/opt/ros/humble:/home/alberto/ros2_ws/install/catkin:/home/alberto/ros2_ws/install/Vanttec_CANLib /usr/bin/cmake /home/alberto/ros2_ws/src/sub -DCMAKE_INSTALL_PREFIX=/home/alberto/ros2_ws/src/sub/install/sub
+[0.524s] Invoking command in '/home/alberto/ros2_ws/src/sub/build/sub': CMAKE_PREFIX_PATH=/home/alberto/ros2_ws/install/uuv_control:/home/alberto/ros2_ws/install/sub:/home/alberto/ros2_ws/install/pid:/opt/ros/humble:/home/alberto/ros2_ws/install/catkin:/home/alberto/ros2_ws/install/Vanttec_CANLib /usr/bin/cmake --build /home/alberto/ros2_ws/src/sub/build/sub -- -j8 -l8
+[0.558s] [ 50%] [32mBuilding CXX object CMakeFiles/objetivo.dir/src/objetivo.cpp.o[0m
+[0.565s] [ 50%] Built target ament_cmake_python_copy_sub
+[0.736s] running egg_info
+[0.736s] creating sub.egg-info
+[0.736s] writing sub.egg-info/PKG-INFO
+[0.737s] writing dependency_links to sub.egg-info/dependency_links.txt
+[0.737s] writing top-level names to sub.egg-info/top_level.txt
+[0.737s] writing manifest file 'sub.egg-info/SOURCES.txt'
+[0.739s] reading manifest file 'sub.egg-info/SOURCES.txt'
+[0.739s] writing manifest file 'sub.egg-info/SOURCES.txt'
+[0.760s] [ 50%] Built target ament_cmake_python_build_sub_egg
+[3.709s] [100%] [32m[1mLinking CXX executable objetivo[0m
+[3.861s] [100%] Built target objetivo
+[3.869s] Invoked command in '/home/alberto/ros2_ws/src/sub/build/sub' returned '0': CMAKE_PREFIX_PATH=/home/alberto/ros2_ws/install/uuv_control:/home/alberto/ros2_ws/install/sub:/home/alberto/ros2_ws/install/pid:/opt/ros/humble:/home/alberto/ros2_ws/install/catkin:/home/alberto/ros2_ws/install/Vanttec_CANLib /usr/bin/cmake --build /home/alberto/ros2_ws/src/sub/build/sub -- -j8 -l8
+[3.876s] Invoking command in '/home/alberto/ros2_ws/src/sub/build/sub': CMAKE_PREFIX_PATH=/home/alberto/ros2_ws/install/uuv_control:/home/alberto/ros2_ws/install/sub:/home/alberto/ros2_ws/install/pid:/opt/ros/humble:/home/alberto/ros2_ws/install/catkin:/home/alberto/ros2_ws/install/Vanttec_CANLib /usr/bin/cmake --install /home/alberto/ros2_ws/src/sub/build/sub
+[3.881s] -- Install configuration: ""
+[3.882s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/environment/pythonpath.sh
+[3.882s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/environment/pythonpath.dsv
+[3.882s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub-0.0.0-py3.10.egg-info
+[3.882s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub-0.0.0-py3.10.egg-info/top_level.txt
+[3.882s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.882s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub-0.0.0-py3.10.egg-info/PKG-INFO
+[3.882s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.882s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub
+[3.882s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install
+[3.882s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/setup.bash
+[3.882s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/_local_setup_util_sh.py
+[3.882s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/local_setup.ps1
+[3.882s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/COLCON_IGNORE
+[3.882s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/setup.zsh
+[3.882s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/setup.ps1
+[3.882s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/setup.sh
+[3.883s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/local_setup.sh
+[3.883s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/local_setup.zsh
+[3.883s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/_local_setup_util_ps1.py
+[3.883s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/local_setup.bash
+[3.883s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/.colcon_install_layout
+[3.883s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/log
+[3.883s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/log/build_2025-03-29_16-42-23
+[3.883s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/log/build_2025-03-29_16-42-23/events.log
+[3.883s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/log/build_2025-03-29_16-42-23/logger_all.log
+[3.883s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/log/COLCON_IGNORE
+[3.883s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/log/latest_build
+[3.883s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/log/latest
+[3.883s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/build
+[3.883s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/build/.built_by
+[3.883s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/build/COLCON_IGNORE
+[3.883s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/__init__.py
+[3.911s] Listing '/home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub'...
+[3.911s] Compiling '/home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/__init__.py'...
+[3.911s] Listing '/home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/build'...
+[3.911s] Listing '/home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install'...
+[3.911s] Compiling '/home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/_local_setup_util_ps1.py'...
+[3.911s] Compiling '/home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/_local_setup_util_sh.py'...
+[3.911s] Listing '/home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/log'...
+[3.911s] Listing '/home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/log/build_2025-03-29_16-42-23'...
+[3.914s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/lib/sub/pid.py
+[3.915s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/lib/sub/posicion.py
+[3.915s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/lib/sub/objetivo
+[3.915s] -- Set runtime path of "/home/alberto/ros2_ws/src/sub/install/sub/lib/sub/objetivo" to ""
+[3.915s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/launch
+[3.915s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/ament_index/resource_index/package_run_dependencies/sub
+[3.916s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/ament_index/resource_index/parent_prefix_path/sub
+[3.916s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/environment/ament_prefix_path.sh
+[3.916s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/environment/ament_prefix_path.dsv
+[3.916s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/environment/path.sh
+[3.916s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/environment/path.dsv
+[3.916s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/local_setup.bash
+[3.916s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/local_setup.sh
+[3.916s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/local_setup.zsh
+[3.916s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/local_setup.dsv
+[3.916s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/package.dsv
+[3.916s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/ament_index/resource_index/packages/sub
+[3.917s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/cmake/subConfig.cmake
+[3.917s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/cmake/subConfig-version.cmake
+[3.917s] -- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/package.xml
+[3.918s] Invoked command in '/home/alberto/ros2_ws/src/sub/build/sub' returned '0': CMAKE_PREFIX_PATH=/home/alberto/ros2_ws/install/uuv_control:/home/alberto/ros2_ws/install/sub:/home/alberto/ros2_ws/install/pid:/opt/ros/humble:/home/alberto/ros2_ws/install/catkin:/home/alberto/ros2_ws/install/Vanttec_CANLib /usr/bin/cmake --install /home/alberto/ros2_ws/src/sub/build/sub

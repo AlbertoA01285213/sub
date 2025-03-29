@@ -1,0 +1,12 @@
+/home/alberto/ros2_ws/src/sub/build/sub/CMakeFiles/uninstall.dir
+/home/alberto/ros2_ws/src/sub/build/sub/CMakeFiles/sub_uninstall.dir
+/home/alberto/ros2_ws/src/sub/build/sub/CMakeFiles/ament_cmake_python_copy_sub.dir
+/home/alberto/ros2_ws/src/sub/build/sub/CMakeFiles/ament_cmake_python_build_sub_egg.dir
+/home/alberto/ros2_ws/src/sub/build/sub/CMakeFiles/objetivo.dir
+/home/alberto/ros2_ws/src/sub/build/sub/CMakeFiles/test.dir
+/home/alberto/ros2_ws/src/sub/build/sub/CMakeFiles/edit_cache.dir
+/home/alberto/ros2_ws/src/sub/build/sub/CMakeFiles/rebuild_cache.dir
+/home/alberto/ros2_ws/src/sub/build/sub/CMakeFiles/list_install_components.dir
+/home/alberto/ros2_ws/src/sub/build/sub/CMakeFiles/install.dir
+/home/alberto/ros2_ws/src/sub/build/sub/CMakeFiles/install/local.dir
+/home/alberto/ros2_ws/src/sub/build/sub/CMakeFiles/install/strip.dir
