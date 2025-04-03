@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
+cmake_policy(SET CMP0009 NEW)
 project(sub)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
@@ -29,6 +30,7 @@ ament_python_install_package(${PROJECT_NAME}) # Esta comentado pq cuando esta ac
 install(PROGRAMS
   src/pid.py
   src/posicion.py
+  src/visualizador.py
   DESTINATION lib/${PROJECT_NAME})
 
 # ============= Para nodos c++ ========================

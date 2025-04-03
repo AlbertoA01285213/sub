@@ -5,6 +5,8 @@ from rclpy.node import Node
 from std_msgs.msg import Int32
 from geometry_msgs.msg import Pose
 
+inicio = 0
+
 class Init(Node):
 
     def __init__(self):
@@ -14,25 +16,34 @@ class Init(Node):
         self.iniciador_sub = self.create_subscription(Int32, 'iniciador', self.iniciador_callback, 10)
 
         self.pose_pub = self.create_publisher(Pose, 'pose', 10)
+        
         self.iniciador_data = Int32()
 
     def pose_output_callback(self, msg):
         pose = Pose()
-        if self.iniciador_data.data == 1:
+
+        if inicio == 1:
             pose.position.x = msg.position.x
             pose.position.y = msg.position.y
             pose.position.z = msg.position.z
+
+        elif inicio == 0:
+            pose.position.x = 0.0
+            pose.position.y = 0.0
+            pose.position.z = 0.0
+
         else:
-            pose.position.x = 0
-            pose.position.y = 0
-            pose.position.z = 0
+            pose.position.x = 2.0
+            pose.position.y = 2.0
+            pose.position.z = 2.0
 
         self.pose_pub.publish(pose)
 
     def iniciador_callback(self, msg):
-        self.iniciador_data = msg
+        global inicio
+        inicio = msg
 
-def main(args=None):
+def main    (args=None):
     rclpy.init(args=args)
 
     node = Init()

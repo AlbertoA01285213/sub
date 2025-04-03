@@ -27,6 +27,7 @@
 /home/alberto/ros2_ws/src/sub/install/sub/lib/sub/pid.py
 /home/alberto/ros2_ws/src/sub/install/sub/lib/sub/posicion.py
 /home/alberto/ros2_ws/src/sub/install/sub/lib/sub/objetivo
+/home/alberto/ros2_ws/src/sub/install/sub/share/sub/launch/launch.launch.xml
 /home/alberto/ros2_ws/src/sub/install/sub/share/ament_index/resource_index/package_run_dependencies/sub
 /home/alberto/ros2_ws/src/sub/install/sub/share/ament_index/resource_index/parent_prefix_path/sub
 /home/alberto/ros2_ws/src/sub/install/sub/share/sub/environment/ament_prefix_path.sh

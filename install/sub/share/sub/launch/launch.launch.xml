@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="sub" type="posicion.py" name="posicion"/>
+  <node pkg="sub" type="pid.py" name="pid" />
+  <node pkg="sub" type="objetivo.cpp" name="objetivo"/>
+  <node pkg="sub" type="visualizador.py" name="visualizador"/>
+
+  <node name="rviz" pkg="rviz" exec="rviz" args="-d $(find sub)/rviz/rviz.rviz" />
+</launch>

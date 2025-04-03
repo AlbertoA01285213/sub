@@ -1,0 +1,98 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)
+-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/alberto/ros2_ws/src/sub/build/sub
+[35m[1mConsolidate compiler generated dependencies of target objetivo[0m
+[  0%] Built target ament_cmake_python_copy_sub
+[100%] Built target objetivo
+running egg_info
+writing sub.egg-info/PKG-INFO
+writing dependency_links to sub.egg-info/dependency_links.txt
+writing top-level names to sub.egg-info/top_level.txt
+reading manifest file 'sub.egg-info/SOURCES.txt'
+writing manifest file 'sub.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_sub_egg
+-- Install configuration: ""
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/environment/pythonpath.sh
+-- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/environment/pythonpath.dsv
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub-0.0.0-py3.10.egg-info
+-- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub-0.0.0-py3.10.egg-info/top_level.txt
+-- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub-0.0.0-py3.10.egg-info/PKG-INFO
+-- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/setup.bash
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/_local_setup_util_sh.py
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/local_setup.ps1
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/COLCON_IGNORE
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/setup.zsh
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/setup.ps1
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/setup.sh
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/local_setup.sh
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/local_setup.zsh
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/_local_setup_util_ps1.py
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/local_setup.bash
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/.colcon_install_layout
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/log
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/log/build_2025-03-29_16-42-23
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/log/build_2025-03-29_16-42-23/events.log
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/log/build_2025-03-29_16-42-23/logger_all.log
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/log/COLCON_IGNORE
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/log/latest_build
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/log/latest
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/build
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/build/.built_by
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/build/COLCON_IGNORE
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/__init__.py
+Listing '/home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub'...
+Listing '/home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/build'...
+Listing '/home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install'...
+Listing '/home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/log'...
+Listing '/home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/log/build_2025-03-29_16-42-23'...
+-- Installing: /home/alberto/ros2_ws/src/sub/install/sub/lib/sub/pid.py
+-- Installing: /home/alberto/ros2_ws/src/sub/install/sub/lib/sub/posicion.py
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/lib/sub/objetivo
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/launch
+-- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/launch/launch.launch.xml
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/ament_index/resource_index/package_run_dependencies/sub
+-- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/ament_index/resource_index/parent_prefix_path/sub
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/environment/ament_prefix_path.sh
+-- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/environment/path.sh
+-- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/environment/path.dsv
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/local_setup.bash
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/local_setup.sh
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/local_setup.zsh
+-- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/local_setup.dsv
+-- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/package.dsv
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/ament_index/resource_index/packages/sub
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/cmake/subConfig.cmake
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/cmake/subConfig-version.cmake
+-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/package.xml

@@ -28,26 +28,17 @@ class Init(Node):
         self.error_anterior_ = [0]*3
         self.integral_ = [0]*3
 
-        self.kp_[0] = 1
-        self.kp_[1] = 1
-        self.kp_[2] = 1
-        # self.kp_[3] = 1
-        # self.kp_[4] = 1
-        # self.kp_[5] = 1
+        self.kp_[0] = 0.01
+        self.kp_[1] = 0.01
+        self.kp_[2] = 0.01
 
         self.ki_[0] = 0
         self.ki_[1] = 0
         self.ki_[2] = 0
-        # self.ki_[3] = 0
-        # self.ki_[4] = 0
-        # self.ki_[5] = 0
 
         self.kd_[0] = 0
         self.kd_[1] = 0
         self.kd_[2] = 0
-        # self.kd_[3] = 0
-        # self.kd_[4] = 0
-        # self.kd_[5] = 0
 
         iniciador = Int32()
         iniciador.data = 1
@@ -62,24 +53,10 @@ class Init(Node):
         self.pose_actual_[1] = msg.position.y
         self.pose_actual_[2] = msg.position.z
 
-        # q = [msg.orientation.x, msg.orientation.y, msg.orientation.z, msg.orientation.w]
-        # roll, pitch, yaw = tf.euler_from_quaternion(q)
-
-        # self.pose_actual_[3] = roll
-        # self.pose_actual_[4] = pitch
-        # self.pose_actual_[5] = yaw
-
     def pose_objetivo_callback(self, msg):
         self.pose_objetivo_[0] = msg.position.x
         self.pose_objetivo_[1] = msg.position.y
         self.pose_objetivo_[2] = msg.position.z
-
-        # q = [msg.orientation.x, msg.orientation.y, msg.orientation.z, msg.orientation.w]
-        # roll, pitch, yaw = tf.euler_from_quaternion(q)
-
-        # self.pose_objetivo_[3] = roll
-        # self.pose_objetivo_[4] = pitch
-        # self.pose_objetivo_[5] = yaw
 
     def calcularpid(self):
         tiempo_actual = self.get_clock().now().nanoseconds
@@ -101,15 +78,10 @@ class Init(Node):
         self.tiempo_anterior_ = tiempo_actual
 
         msg = Pose()
+
         msg.position.x = self.pose_output_[0]
         msg.position.y = self.pose_output_[1]
         msg.position.z = self.pose_output_[2]
-
-        #q = tf.quaternion_from_euler(self.pose_output_[3], self.pose_output_[4], self.pose_output_[5])
-        #msg.orientation.x = q[0]
-        #msg.orientation.y = q[1]
-        #msg.orientation.z = q[2]
-        #msg.orientation.w = q[3]
 
         self.pose_pub.publish(msg)
 
