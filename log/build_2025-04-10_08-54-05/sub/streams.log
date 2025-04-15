@@ -1,0 +1,10 @@
+[0.007s] Invoking command in '/home/alberto/ros2_ws/src/sub/build/sub': CMAKE_PREFIX_PATH=/home/alberto/ros2_ws/install/sub:/home/alberto/ros2_ws/install/pid:/opt/ros/humble:/home/alberto/ros2_ws/install/catkin /usr/bin/cmake --build /home/alberto/ros2_ws/src/sub/build/sub -- -j8 -l8
+[0.021s] [31mCMake Error at CMakeLists.txt:48:
+[0.021s]   Parse error.  Expected a command name, got unquoted argument with text
+[0.021s]   "${CMAKE_CURRENT_SOURCE_DIR}/libs/src".
+[0.021s] 
+[0.021s] [0m
+[0.021s] -- Configuring incomplete, errors occurred!
+[0.021s] See also "/home/alberto/ros2_ws/src/sub/build/sub/CMakeFiles/CMakeOutput.log".
+[0.022s] gmake: *** [Makefile:336: cmake_check_build_system] Error 1
+[0.024s] Invoked command in '/home/alberto/ros2_ws/src/sub/build/sub' returned '2': CMAKE_PREFIX_PATH=/home/alberto/ros2_ws/install/sub:/home/alberto/ros2_ws/install/pid:/opt/ros/humble:/home/alberto/ros2_ws/install/catkin /usr/bin/cmake --build /home/alberto/ros2_ws/src/sub/build/sub -- -j8 -l8

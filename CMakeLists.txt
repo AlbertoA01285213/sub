@@ -21,7 +21,13 @@ find_package(tf2_ros REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(rosidl_typesupport_c REQUIRED)  # Añadir esta línea
 
-#add_subdirectory(libs/uuv_libs)
+#add_subdirectory(libs/src) # No se como se ponga bien
+add_library(uuv_model_lib
+  libs/src/models/uuv_dynamic_model.cpp)
+
+target_include_directories(uuv_model_lib PUBLIC
+  ${CMAKE_CURRENT_SOURCE_DIR}/libs/src
+  ${EIGEN3_INCLUDE_DIRS})
 
 # ============= Para nodos python ==========================
 
@@ -41,15 +47,40 @@ install(PROGRAMS
 #   posicion
 #   DESTINATION lib/${PROJECT_NAME})
 
+add_executable(dynamic_model_uuv src/dynamic_model_uuv.cpp)
+target_include_directories(dynamic_model_uuv PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include> libs/uuv_libs
+  ${CMAKE_CURRENT_SOURCE_DIR}/libs/src
+  )
+target_compile_features(dynamic_model_uuv PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
+# ament_target_dependencies(dynamic_model_uuv ${DEPENDENCIES})
+# target_link_libraries(dynamic_model_uuv uuv_libs)
+ament_target_dependencies(dynamic_model_uuv
+  rclcpp
+  std_msgs
+  geometry_msgs
+  nav_msgs
+  tf2
+  tf2_ros
+  tf2_geometry_msgs
+  visualization_msgs
+  sensor_msgs
+  Eigen3
+)
+target_link_libraries(dynamic_model_uuv uuv_model_lib)
+
 add_executable(objetivo src/objetivo.cpp)
 ament_target_dependencies(objetivo rclcpp std_msgs geometry_msgs)
 install(TARGETS
   objetivo
+  dynamic_model_uuv
   DESTINATION lib/${PROJECT_NAME})
 
-# ============== Lunchfiles ===============================
+# ============== Launchfiles ===============================
 install(DIRECTORY
   launch
+  rviz
   DESTINATION share/${PROJECT_NAME})
 
 if(BUILD_TESTING)

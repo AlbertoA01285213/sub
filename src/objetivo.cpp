@@ -39,3 +39,5 @@ int main(int argc, char * argv[])
     rclcpp::shutdown();
     return 0;
 }
+
+// ros2 topic pub /pose_objetivo geometry_msgs/msg/Pose "{position: {x: -1.0, y: -1.0, z: 1.0}, orientation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}}"

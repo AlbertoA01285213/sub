@@ -1,0 +1,9 @@
+[31mCMake Error at CMakeLists.txt:24 (add_subdirectory):
+  The source directory
+
+    /home/alberto/ros2_ws/src/sub/libs/src
+
+  does not contain a CMakeLists.txt file.
+
+[0m
+gmake: *** [Makefile:295: cmake_check_build_system] Error 1

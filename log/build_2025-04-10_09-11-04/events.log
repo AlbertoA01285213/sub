@@ -1,0 +1,158 @@
+[0.000000] (-) TimerEvent: {}
+[0.000192] (sub) JobQueued: {'identifier': 'sub', 'dependencies': OrderedDict()}
+[0.000359] (sub) JobStarted: {'identifier': 'sub'}
+[0.005403] (sub) JobProgress: {'identifier': 'sub', 'progress': 'cmake'}
+[0.005803] (sub) JobProgress: {'identifier': 'sub', 'progress': 'build'}
+[0.006316] (sub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/alberto/ros2_ws/src/sub/build/sub', '--', '-j8', '-l8'], 'cwd': '/home/alberto/ros2_ws/src/sub/build/sub', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'alberto'), ('LC_TIME', 'es_MX.UTF-8'), ('ROS_PACKAGE_PATH', '/home/alberto/ros2_ws/install/catkin/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/alberto'), ('OLDPWD', '/home/alberto/ros2_ws/src/sub/libs'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_MX.UTF-8'), ('MANAGERPID', '904'), ('SYSTEMD_EXEC_PID', '1288'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '1783'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/alberto/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'alberto'), ('JOURNAL_STREAM', '8:10727'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/alberto/ros2_ws/install/catkin/lib/x86_64-linux-gnu/pkgconfig:/home/alberto/ros2_ws/install/catkin/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'alberto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/alberto/ros2_ws/install/catkin/bin:/opt/ros/humble/bin:/home/alberto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Alberto:@/tmp/.ICE-unix/1048,unix/Alberto:/tmp/.ICE-unix/1048'), ('INVOCATION_ID', '775fd006dbc54fd291a54aab2b323e85'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_MX.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_MX.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.37DZ42'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/alberto/ros2_ws/install/sub:/home/alberto/ros2_ws/install/pid:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_MX.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:3ecd017c-b07b-4391-b40f-b880184f81bb'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_MX.UTF-8'), ('LC_IDENTIFICATION', 'es_MX.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/alberto/ros2_ws/src/sub/build/sub'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/alberto/ros2_ws/install/sub/local/lib/python3.10/dist-packages:/home/alberto/ros2_ws/install/catkin/lib/python3/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_MX.UTF-8'), ('LC_PAPER', 'es_MX.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/alberto/ros2_ws/install/sub:/home/alberto/ros2_ws/install/pid:/opt/ros/humble:/home/alberto/ros2_ws/install/catkin')]), 'shell': False}
+[0.024258] (sub) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099933] (-) TimerEvent: {}
+[0.110569] (sub) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.128679] (sub) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.130441] (sub) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.134237] (sub) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.140402] (sub) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.148169] (sub) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.168289] (sub) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.169147] (sub) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.200045] (-) TimerEvent: {}
+[0.232811] (sub) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.264756] (sub) StdoutLine: {'line': b'-- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[0.264930] (sub) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.272816] (sub) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.283438] (sub) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[0.285467] (sub) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.286375] (sub) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.300214] (-) TimerEvent: {}
+[0.340325] (sub) StdoutLine: {'line': b'-- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[0.400320] (-) TimerEvent: {}
+[0.410336] (sub) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.490055] (sub) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.490283] (sub) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/alberto/ros2_ws/src/sub/libs/src;$<BUILD_INTERFACE:/home/alberto/ros2_ws/src/sub/include>;/home/alberto/ros2_ws/src/sub/libs/uuv_libs\n'}
+[0.490336] (sub) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.495004] (sub) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.500408] (-) TimerEvent: {}
+[0.508290] (sub) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.514072] (sub) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.551804] (sub) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.551960] (sub) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.556855] (sub) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.557539] (sub) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.568678] (sub) StdoutLine: {'line': b'-- Generating done\n'}
+[0.574723] (sub) StdoutLine: {'line': b'-- Build files have been written to: /home/alberto/ros2_ws/src/sub/build/sub\n'}
+[0.593088] (sub) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target objetivo\x1b[0m\n'}
+[0.599095] (sub) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/uuv_model_lib.dir/libs/src/models/uuv_dynamic_model.cpp.o\x1b[0m\n'}
+[0.600478] (-) TimerEvent: {}
+[0.606002] (sub) StdoutLine: {'line': b'[ 16%] Built target ament_cmake_python_copy_sub\n'}
+[0.606202] (sub) StdoutLine: {'line': b'[ 50%] Built target objetivo\n'}
+[0.700595] (-) TimerEvent: {}
+[0.760767] (sub) StdoutLine: {'line': b'running egg_info\n'}
+[0.774566] (sub) StdoutLine: {'line': b'writing sub.egg-info/PKG-INFO\n'}
+[0.774964] (sub) StdoutLine: {'line': b'writing dependency_links to sub.egg-info/dependency_links.txt\n'}
+[0.775194] (sub) StdoutLine: {'line': b'writing top-level names to sub.egg-info/top_level.txt\n'}
+[0.800783] (-) TimerEvent: {}
+[0.808352] (sub) StdoutLine: {'line': b"reading manifest file 'sub.egg-info/SOURCES.txt'\n"}
+[0.809132] (sub) StdoutLine: {'line': b"writing manifest file 'sub.egg-info/SOURCES.txt'\n"}
+[0.836614] (sub) StdoutLine: {'line': b'[ 50%] Built target ament_cmake_python_build_sub_egg\n'}
+[0.900995] (-) TimerEvent: {}
+[1.001359] (-) TimerEvent: {}
+[1.101734] (-) TimerEvent: {}
+[1.202072] (-) TimerEvent: {}
+[1.302419] (-) TimerEvent: {}
+[1.402773] (-) TimerEvent: {}
+[1.503133] (-) TimerEvent: {}
+[1.603462] (-) TimerEvent: {}
+[1.703819] (-) TimerEvent: {}
+[1.804187] (-) TimerEvent: {}
+[1.904511] (-) TimerEvent: {}
+[2.004843] (-) TimerEvent: {}
+[2.105190] (-) TimerEvent: {}
+[2.205435] (-) TimerEvent: {}
+[2.305696] (-) TimerEvent: {}
+[2.405977] (-) TimerEvent: {}
+[2.506336] (-) TimerEvent: {}
+[2.606693] (-) TimerEvent: {}
+[2.706967] (-) TimerEvent: {}
+[2.807252] (-) TimerEvent: {}
+[2.907648] (-) TimerEvent: {}
+[3.008022] (-) TimerEvent: {}
+[3.105522] (sub) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX static library libuuv_model_lib.a\x1b[0m\n'}
+[3.108104] (-) TimerEvent: {}
+[3.151628] (sub) StdoutLine: {'line': b'[ 66%] Built target uuv_model_lib\n'}
+[3.160365] (sub) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target dynamic_model_uuv\x1b[0m\n'}
+[3.173430] (sub) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable dynamic_model_uuv\x1b[0m\n'}
+[3.208225] (-) TimerEvent: {}
+[3.308618] (-) TimerEvent: {}
+[3.408874] (-) TimerEvent: {}
+[3.509233] (-) TimerEvent: {}
+[3.609508] (-) TimerEvent: {}
+[3.631409] (sub) StdoutLine: {'line': b'[100%] Built target dynamic_model_uuv\n'}
+[3.639906] (sub) CommandEnded: {'returncode': 0}
+[3.640412] (sub) JobProgress: {'identifier': 'sub', 'progress': 'install'}
+[3.646224] (sub) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/alberto/ros2_ws/src/sub/build/sub'], 'cwd': '/home/alberto/ros2_ws/src/sub/build/sub', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'alberto'), ('LC_TIME', 'es_MX.UTF-8'), ('ROS_PACKAGE_PATH', '/home/alberto/ros2_ws/install/catkin/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/alberto'), ('OLDPWD', '/home/alberto/ros2_ws/src/sub/libs'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_MX.UTF-8'), ('MANAGERPID', '904'), ('SYSTEMD_EXEC_PID', '1288'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '1783'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/alberto/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'alberto'), ('JOURNAL_STREAM', '8:10727'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/alberto/ros2_ws/install/catkin/lib/x86_64-linux-gnu/pkgconfig:/home/alberto/ros2_ws/install/catkin/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'alberto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/alberto/ros2_ws/install/catkin/bin:/opt/ros/humble/bin:/home/alberto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Alberto:@/tmp/.ICE-unix/1048,unix/Alberto:/tmp/.ICE-unix/1048'), ('INVOCATION_ID', '775fd006dbc54fd291a54aab2b323e85'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_MX.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_MX.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.37DZ42'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/alberto/ros2_ws/install/sub:/home/alberto/ros2_ws/install/pid:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_MX.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:3ecd017c-b07b-4391-b40f-b880184f81bb'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_MX.UTF-8'), ('LC_IDENTIFICATION', 'es_MX.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/alberto/ros2_ws/src/sub/build/sub'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/alberto/ros2_ws/install/sub/local/lib/python3.10/dist-packages:/home/alberto/ros2_ws/install/catkin/lib/python3/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_MX.UTF-8'), ('LC_PAPER', 'es_MX.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/alberto/ros2_ws/install/sub:/home/alberto/ros2_ws/install/pid:/opt/ros/humble:/home/alberto/ros2_ws/install/catkin')]), 'shell': False}
+[3.651649] (sub) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.651787] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/environment/pythonpath.sh\n'}
+[3.651833] (sub) StdoutLine: {'line': b'-- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/environment/pythonpath.dsv\n'}
+[3.651913] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub-0.0.0-py3.10.egg-info\n'}
+[3.651960] (sub) StdoutLine: {'line': b'-- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[3.652034] (sub) StdoutLine: {'line': b'-- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[3.652076] (sub) StdoutLine: {'line': b'-- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[3.652136] (sub) StdoutLine: {'line': b'-- Installing: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[3.652194] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub\n'}
+[3.652257] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install\n'}
+[3.652380] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/setup.bash\n'}
+[3.652421] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/_local_setup_util_sh.py\n'}
+[3.652473] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/local_setup.ps1\n'}
+[3.652535] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/COLCON_IGNORE\n'}
+[3.652592] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/setup.zsh\n'}
+[3.652649] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/setup.ps1\n'}
+[3.652702] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/setup.sh\n'}
+[3.652762] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/local_setup.sh\n'}
+[3.652824] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/local_setup.zsh\n'}
+[3.652883] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/_local_setup_util_ps1.py\n'}
+[3.652944] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/local_setup.bash\n'}
+[3.653018] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install/.colcon_install_layout\n'}
+[3.653142] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/log\n'}
+[3.653206] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/log/build_2025-03-29_16-42-23\n'}
+[3.653260] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/log/build_2025-03-29_16-42-23/events.log\n'}
+[3.653316] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/log/build_2025-03-29_16-42-23/logger_all.log\n'}
+[3.653377] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/log/COLCON_IGNORE\n'}
+[3.653441] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/log/latest_build\n'}
+[3.653531] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/log/latest\n'}
+[3.653586] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/build\n'}
+[3.653637] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/build/.built_by\n'}
+[3.653697] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/build/COLCON_IGNORE\n'}
+[3.653743] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/__init__.py\n'}
+[3.676317] (sub) StdoutLine: {'line': b"Listing '/home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub'...\n"}
+[3.676449] (sub) StdoutLine: {'line': b"Listing '/home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/build'...\n"}
+[3.676503] (sub) StdoutLine: {'line': b"Listing '/home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/install'...\n"}
+[3.676544] (sub) StdoutLine: {'line': b"Listing '/home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/log'...\n"}
+[3.676583] (sub) StdoutLine: {'line': b"Listing '/home/alberto/ros2_ws/src/sub/install/sub/local/lib/python3.10/dist-packages/sub/log/build_2025-03-29_16-42-23'...\n"}
+[3.679680] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/lib/sub/pid.py\n'}
+[3.679846] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/lib/sub/posicion.py\n'}
+[3.679896] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/lib/sub/visualizador.py\n'}
+[3.679935] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/lib/sub/objetivo\n'}
+[3.679971] (sub) StdoutLine: {'line': b'-- Installing: /home/alberto/ros2_ws/src/sub/install/sub/lib/sub/dynamic_model_uuv\n'}
+[3.683406] (sub) StdoutLine: {'line': b'-- Set runtime path of "/home/alberto/ros2_ws/src/sub/install/sub/lib/sub/dynamic_model_uuv" to ""\n'}
+[3.683610] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/launch\n'}
+[3.683676] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/launch/launch.launch.xml\n'}
+[3.683733] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/rviz\n'}
+[3.683789] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/rviz/rivz.rviz\n'}
+[3.683906] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/rviz/pid.rviz\n'}
+[3.683960] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/ament_index/resource_index/package_run_dependencies/sub\n'}
+[3.684015] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/ament_index/resource_index/parent_prefix_path/sub\n'}
+[3.684101] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/environment/ament_prefix_path.sh\n'}
+[3.684145] (sub) StdoutLine: {'line': b'-- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/environment/ament_prefix_path.dsv\n'}
+[3.684185] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/environment/path.sh\n'}
+[3.684227] (sub) StdoutLine: {'line': b'-- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/environment/path.dsv\n'}
+[3.684269] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/local_setup.bash\n'}
+[3.684309] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/local_setup.sh\n'}
+[3.684348] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/local_setup.zsh\n'}
+[3.684387] (sub) StdoutLine: {'line': b'-- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/local_setup.dsv\n'}
+[3.684427] (sub) StdoutLine: {'line': b'-- Installing: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/package.dsv\n'}
+[3.684466] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/ament_index/resource_index/packages/sub\n'}
+[3.684544] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/cmake/subConfig.cmake\n'}
+[3.684612] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/cmake/subConfig-version.cmake\n'}
+[3.684651] (sub) StdoutLine: {'line': b'-- Up-to-date: /home/alberto/ros2_ws/src/sub/install/sub/share/sub/package.xml\n'}
+[3.685478] (sub) CommandEnded: {'returncode': 0}
+[3.697133] (sub) JobEnded: {'identifier': 'sub', 'rc': 0}
+[3.697583] (-) EventReactorShutdown: {}

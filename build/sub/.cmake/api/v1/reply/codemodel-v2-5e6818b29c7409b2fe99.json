@@ -1,0 +1,115 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-bf9bf548f2c984304318.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "sub",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_sub_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_sub_egg-06ae2f6171d087e8b2cf.json",
+					"name" : "ament_cmake_python_build_sub_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_sub::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_sub-dd9ed696313c81dcbc46.json",
+					"name" : "ament_cmake_python_copy_sub",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dynamic_model_uuv::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dynamic_model_uuv-357bbb81adeff371d593.json",
+					"name" : "dynamic_model_uuv",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "objetivo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-objetivo-1d7403f80cbbe25164b3.json",
+					"name" : "objetivo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sub_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sub_uninstall-33cf897862facd757f53.json",
+					"name" : "sub_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-a5afa0d79a2821008c9b.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uuv_model_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uuv_model_lib-ed34fa050b53fbfa429c.json",
+					"name" : "uuv_model_lib",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/alberto/ros2_ws/src/sub/build/sub",
+		"source" : "/home/alberto/ros2_ws/src/sub"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

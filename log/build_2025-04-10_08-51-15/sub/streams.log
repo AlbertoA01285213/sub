@@ -1,0 +1,20 @@
+[0.007s] Invoking command in '/home/alberto/ros2_ws/src/sub/build/sub': CMAKE_PREFIX_PATH=/home/alberto/ros2_ws/install/sub:/home/alberto/ros2_ws/install/pid:/opt/ros/humble:/home/alberto/ros2_ws/install/catkin /usr/bin/cmake --build /home/alberto/ros2_ws/src/sub/build/sub -- -j8 -l8
+[0.040s] [ 25%] [32mBuilding CXX object CMakeFiles/dynamic_model_uuv.dir/src/dynamic_model_uuv.cpp.o[0m
+[0.043s] [ 75%] Built target objetivo
+[0.046s] [ 75%] Built target ament_cmake_python_copy_sub
+[0.196s] running egg_info
+[0.207s] writing sub.egg-info/PKG-INFO
+[0.208s] writing dependency_links to sub.egg-info/dependency_links.txt
+[0.208s] writing top-level names to sub.egg-info/top_level.txt
+[0.218s] [01m[K/home/alberto/ros2_ws/src/sub/src/dynamic_model_uuv.cpp:17:10:[m[K [01;31m[Kfatal error: [m[Kmodels/uuv_dynamic_model.h: No such file or directory
+[0.219s]    17 | #include [01;31m[K"models/uuv_dynamic_model.h"[m[K
+[0.219s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.219s] compilation terminated.
+[0.221s] gmake[2]: *** [CMakeFiles/dynamic_model_uuv.dir/build.make:76: CMakeFiles/dynamic_model_uuv.dir/src/dynamic_model_uuv.cpp.o] Error 1
+[0.221s] gmake[1]: *** [CMakeFiles/Makefile2:194: CMakeFiles/dynamic_model_uuv.dir/all] Error 2
+[0.221s] gmake[1]: *** Waiting for unfinished jobs....
+[0.240s] reading manifest file 'sub.egg-info/SOURCES.txt'
+[0.240s] writing manifest file 'sub.egg-info/SOURCES.txt'
+[0.262s] [ 75%] Built target ament_cmake_python_build_sub_egg
+[0.262s] gmake: *** [Makefile:146: all] Error 2
+[0.264s] Invoked command in '/home/alberto/ros2_ws/src/sub/build/sub' returned '2': CMAKE_PREFIX_PATH=/home/alberto/ros2_ws/install/sub:/home/alberto/ros2_ws/install/pid:/opt/ros/humble:/home/alberto/ros2_ws/install/catkin /usr/bin/cmake --build /home/alberto/ros2_ws/src/sub/build/sub -- -j8 -l8

@@ -1,0 +1,10 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/dynamic_model_uuv.dir/src/dynamic_model_uuv.cpp.o[0m
+[ 75%] Built target objetivo
+[ 75%] Built target ament_cmake_python_copy_sub
+running egg_info
+writing sub.egg-info/PKG-INFO
+writing dependency_links to sub.egg-info/dependency_links.txt
+writing top-level names to sub.egg-info/top_level.txt
+reading manifest file 'sub.egg-info/SOURCES.txt'
+writing manifest file 'sub.egg-info/SOURCES.txt'
+[ 75%] Built target ament_cmake_python_build_sub_egg

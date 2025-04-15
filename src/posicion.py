@@ -12,8 +12,7 @@ class Init(Node):
     def __init__(self):
         super().__init__('posicion')
 
-        self.pose_output_sub = self.create_subscription(Pose, 'output', self.pose_output_callback, 10)
-        self.iniciador_sub = self.create_subscription(Int32, 'iniciador', self.iniciador_callback, 10)
+        self.pose_output_sub = self.create_subscription(Pose, 'uuv/state/pose', self.pose_output_callback, 10)
 
         self.pose_pub = self.create_publisher(Pose, 'pose', 10)
         self.inicio = 1.0
@@ -26,6 +25,9 @@ class Init(Node):
         self.posicion.position.x = msg.position.x
         self.posicion.position.y = msg.position.y
         self.posicion.position.z = msg.position.z
+        self.posicion.orientation.x = msg.orientation.x
+        self.posicion.orientation.y = msg.orientation.y
+        self.posicion.orientation.z = msg.orientation.z
 
 
     def iniciador_callback(self, msg):

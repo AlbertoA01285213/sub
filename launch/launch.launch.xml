@@ -3,6 +3,7 @@
   <node pkg="sub" exec="pid.py" name="pid"/>
   <!--node pkg="sub" exec="objetivo" name="objetivo"/-->
   <node pkg="sub" exec="visualizador.py" name="visualizador"/>
+  <node pkg="sub" exec="dynamic_model_uuv" name="modelo_dinamico"/>
 
   <node name="rviz2" pkg="rviz2" exec="rviz2" args="-d $(find-pkg-share sub)/rviz/pid.rviz"/>
 </launch>

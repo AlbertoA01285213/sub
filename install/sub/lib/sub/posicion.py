@@ -5,7 +5,7 @@ from rclpy.node import Node
 from std_msgs.msg import Int32
 from geometry_msgs.msg import Pose
 
-inicio = 0
+
 
 class Init(Node):
 
@@ -16,32 +16,41 @@ class Init(Node):
         self.iniciador_sub = self.create_subscription(Int32, 'iniciador', self.iniciador_callback, 10)
 
         self.pose_pub = self.create_publisher(Pose, 'pose', 10)
-        
-        self.iniciador_data = Int32()
+        self.inicio = 1.0
+
+        self.posicion = Pose()
+
+        self.create_timer(0.1, self.posicionamiento)
 
     def pose_output_callback(self, msg):
-        pose = Pose()
+        self.posicion.position.x = msg.position.x
+        self.posicion.position.y = msg.position.y
+        self.posicion.position.z = msg.position.z
 
-        if inicio == 1:
-            pose.position.x = msg.position.x
-            pose.position.y = msg.position.y
-            pose.position.z = msg.position.z
-
-        elif inicio == 0:
-            pose.position.x = 0.0
-            pose.position.y = 0.0
-            pose.position.z = 0.0
-
-        else:
-            pose.position.x = 2.0
-            pose.position.y = 2.0
-            pose.position.z = 2.0
-
-        self.pose_pub.publish(pose)
 
     def iniciador_callback(self, msg):
-        global inicio
-        inicio = msg
+        self.inicio = msg.data
+
+    def posicionamiento(self):
+        self.pose_pub.publish(self.posicion)
+        
+
+        # if self.inicio == 1.0:
+        #     self.pose_pub.publish(self.posicion)
+
+
+        # elif self.inicio == 0.0:
+        #     self.posicion.position.x = 0.0
+        #     self.posicion.position.y = 0.0
+        #     self.posicion.position.z = 0.0
+        #     self.pose_pub.publish(self.posicion)
+
+        # else:
+        #     self.posicion.position.x = 2.0
+        #     self.posicion.position.y = 2.0
+        #     self.posicion.position.z = 2.0
+        #     self.pose_pub.publish(self.posicion)
+
 
 def main    (args=None):
     rclpy.init(args=args)

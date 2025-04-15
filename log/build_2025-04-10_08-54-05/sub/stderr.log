@@ -1,0 +1,6 @@
+[31mCMake Error at CMakeLists.txt:48:
+  Parse error.  Expected a command name, got unquoted argument with text
+  "${CMAKE_CURRENT_SOURCE_DIR}/libs/src".
+
+[0m
+gmake: *** [Makefile:336: cmake_check_build_system] Error 1

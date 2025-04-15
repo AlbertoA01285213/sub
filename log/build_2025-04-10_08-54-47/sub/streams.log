@@ -1,0 +1,52 @@
+[0.007s] Invoking command in '/home/alberto/ros2_ws/src/sub/build/sub': CMAKE_PREFIX_PATH=/home/alberto/ros2_ws/install/sub:/home/alberto/ros2_ws/install/pid:/opt/ros/humble:/home/alberto/ros2_ws/install/catkin /usr/bin/cmake --build /home/alberto/ros2_ws/src/sub/build/sub -- -j8 -l8
+[0.025s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.115s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.134s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.136s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.140s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.146s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.155s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.177s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.177s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.246s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.279s] -- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)
+[0.279s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.288s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.299s] -- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.301s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.302s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.359s] -- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.434s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.517s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.517s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/alberto/ros2_ws/src/sub/include>;/home/alberto/ros2_ws/src/sub/libs/uuv_libs;/home/alberto/ros2_ws/src/sub/libs/src
+[0.517s] -- Configured cppcheck exclude dirs and/or files: 
+[0.521s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.531s] -- Added test 'lint_cmake' to check CMake code style
+[0.536s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.570s] -- Added test 'uncrustify' to check C / C++ code style
+[0.570s] -- Configured uncrustify additional arguments: 
+[0.574s] -- Added test 'xmllint' to check XML markup files
+[0.575s] -- Configuring done
+[0.586s] -- Generating done
+[0.591s] -- Build files have been written to: /home/alberto/ros2_ws/src/sub/build/sub
+[0.611s] [35m[1mConsolidate compiler generated dependencies of target objetivo[0m
+[0.618s] [ 25%] [32mBuilding CXX object CMakeFiles/dynamic_model_uuv.dir/src/dynamic_model_uuv.cpp.o[0m
+[0.624s] [ 25%] Built target ament_cmake_python_copy_sub
+[0.626s] [ 75%] Built target objetivo
+[0.790s] running egg_info
+[0.803s] writing sub.egg-info/PKG-INFO
+[0.803s] writing dependency_links to sub.egg-info/dependency_links.txt
+[0.803s] writing top-level names to sub.egg-info/top_level.txt
+[0.835s] reading manifest file 'sub.egg-info/SOURCES.txt'
+[0.836s] writing manifest file 'sub.egg-info/SOURCES.txt'
+[0.859s] [ 75%] Built target ament_cmake_python_build_sub_egg
+[7.594s] [100%] [32m[1mLinking CXX executable dynamic_model_uuv[0m
+[7.935s] /usr/bin/ld: CMakeFiles/dynamic_model_uuv.dir/src/dynamic_model_uuv.cpp.o: in function `DynamicModelSim::DynamicModelSim()':
+[7.935s] dynamic_model_uuv.cpp:(.text._ZN15DynamicModelSimC2Ev[_ZN15DynamicModelSimC5Ev]+0x1a5): undefined reference to `UUVDynamicModel::UUVDynamicModel()'
+[7.935s] /usr/bin/ld: CMakeFiles/dynamic_model_uuv.dir/src/dynamic_model_uuv.cpp.o: in function `DynamicModelSim::update()':
+[7.935s] dynamic_model_uuv.cpp:(.text._ZN15DynamicModelSim6updateEv[_ZN15DynamicModelSim6updateEv]+0x63): undefined reference to `UUVDynamicModel::update(std::array<double, 6ul>)'
+[7.968s] collect2: error: ld returned 1 exit status
+[7.969s] gmake[2]: *** [CMakeFiles/dynamic_model_uuv.dir/build.make:222: dynamic_model_uuv] Error 1
+[7.969s] gmake[1]: *** [CMakeFiles/Makefile2:194: CMakeFiles/dynamic_model_uuv.dir/all] Error 2
+[7.969s] gmake: *** [Makefile:146: all] Error 2
+[7.970s] Invoked command in '/home/alberto/ros2_ws/src/sub/build/sub' returned '2': CMAKE_PREFIX_PATH=/home/alberto/ros2_ws/install/sub:/home/alberto/ros2_ws/install/pid:/opt/ros/humble:/home/alberto/ros2_ws/install/catkin /usr/bin/cmake --build /home/alberto/ros2_ws/src/sub/build/sub -- -j8 -l8
