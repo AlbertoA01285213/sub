@@ -23,7 +23,10 @@ class MarkerPublisher(Node):
         sub.header.stamp = self.get_clock().now().to_msg()
         sub.ns = "example_namespace"
         sub.id = 0
-        sub.type = Marker.SPHERE
+        sub.type = Marker.MESH_RESOURCE
+        sub.mesh_resource = "package://sub/models/uuv.STL"
+        #sub.mesh_resource = "package://turtlebot3_description/meshes/bases/burger_base.stl"
+        sub.type = Marker.CUBE
         sub.action = Marker.ADD
         sub.pose.position.x = float(self.pose_objetivo_[0])
         sub.pose.position.y = float(self.pose_objetivo_[1])
@@ -31,7 +34,6 @@ class MarkerPublisher(Node):
         sub.pose.orientation.x = float(self.pose_objetivo_[3])
         sub.pose.orientation.y = float(self.pose_objetivo_[4])
         sub.pose.orientation.z = float(self.pose_objetivo_[5])
-        sub.pose.orientation.w = 1.0
         sub.scale.x = 0.5
         sub.scale.y = 0.5
         sub.scale.z = 0.5

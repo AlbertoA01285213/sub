@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<robot name = "sub">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://sub/models/UUV_1.0.STL"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

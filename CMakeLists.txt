@@ -37,6 +37,7 @@ install(PROGRAMS
   src/pid.py
   src/posicion.py
   src/visualizador.py
+  src/objetivo.py
   DESTINATION lib/${PROJECT_NAME})
 
 # ============= Para nodos c++ ========================
@@ -70,17 +71,21 @@ ament_target_dependencies(dynamic_model_uuv
 )
 target_link_libraries(dynamic_model_uuv uuv_model_lib)
 
-add_executable(objetivo src/objetivo.cpp)
-ament_target_dependencies(objetivo rclcpp std_msgs geometry_msgs)
-install(TARGETS
-  objetivo
-  dynamic_model_uuv
-  DESTINATION lib/${PROJECT_NAME})
+#add_executable(objetivo src/objetivo.cpp)
+#ament_target_dependencies(objetivo rclcpp std_msgs geometry_msgs)
+#install(TARGETS
+#  objetivo
+#  dynamic_model_uuv
+#  DESTINATION lib/${PROJECT_NAME})
 
 # ============== Launchfiles ===============================
 install(DIRECTORY
   launch
   rviz
+  DESTINATION share/${PROJECT_NAME})
+
+install(DIRECTORY 
+  models
   DESTINATION share/${PROJECT_NAME})
 
 if(BUILD_TESTING)
