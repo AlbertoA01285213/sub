@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+  <node pkg="sub" exec="visualizador.py" name="visualizador"/>
+  <node pkg="sub" exec="dynamic_model_uuv" name="modelo_dinamico"/>
+  <node pkg="joy" exec="joy_node" name="joy_node"/>
+  <node pkg="sub" exec="joystick.py" name="joystick_translate"/>
+
+  <node name="rviz2" pkg="rviz2" exec="rviz2" args="-d $(find-pkg-share sub)/rviz/pid.rviz"/>
+</launch>

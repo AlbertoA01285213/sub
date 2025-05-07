@@ -38,6 +38,7 @@ install(PROGRAMS
   src/posicion.py
   src/visualizador.py
   src/objetivo.py
+  src/joystick.py
   DESTINATION lib/${PROJECT_NAME})
 
 # ============= Para nodos c++ ========================
