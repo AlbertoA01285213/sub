@@ -11,7 +11,7 @@ class MarkerPublisher(Node):
         self.posicion_ = self.create_subscription(Pose, 'uuv/state/pose', self.pose_objetivo_callback, 10)
         self.publisher_ = self.create_publisher(Marker, 'sub_topic', 10)
 
-        self.pose_objetivo_ = [0]*6
+        self.pose_objetivo_ = [0]*7
 
 
         self.timer = self.create_timer(0.1, self.publish_sub)
@@ -23,17 +23,20 @@ class MarkerPublisher(Node):
         sub.header.stamp = self.get_clock().now().to_msg()
         sub.ns = "example_namespace"
         sub.id = 0
-        sub.type = Marker.MESH_RESOURCE
-        sub.mesh_resource = "package://sub/models/uuv.STL"
+        #sub.type = Marker.MESH_RESOURCE
+        #sub.mesh_resource = "package://sub/models/uuv.STL"
         #sub.mesh_resource = "package://turtlebot3_description/meshes/bases/burger_base.stl"
         sub.type = Marker.CUBE
         sub.action = Marker.ADD
+
+
         sub.pose.position.x = float(self.pose_objetivo_[0])
         sub.pose.position.y = float(self.pose_objetivo_[1])
         sub.pose.position.z = float(self.pose_objetivo_[2])
         sub.pose.orientation.x = float(self.pose_objetivo_[3])
         sub.pose.orientation.y = float(self.pose_objetivo_[4])
         sub.pose.orientation.z = float(self.pose_objetivo_[5])
+        sub.pose.orientation.w = float(self.pose_objetivo_[6])
         sub.scale.x = 0.5
         sub.scale.y = 0.5
         sub.scale.z = 0.5
@@ -52,6 +55,7 @@ class MarkerPublisher(Node):
         self.pose_objetivo_[3] = msg.orientation.x
         self.pose_objetivo_[4] = msg.orientation.y
         self.pose_objetivo_[5] = msg.orientation.z
+        self.pose_objetivo_[6] = msg.orientation.w
 
 
 def main(args=None):

@@ -58,9 +58,17 @@ class DynamicModelSim : public rclcpp::Node {
   double normalize_angle(double ang){
     double out = std::fmod(ang + M_PI, M_PI*2);
     if(out < 0)
-      out+=M_PI*2;
+      out+=M_PI;
     return out - M_PI;
   }
+
+  // double normalize_angle(double ang) {
+  //   double out = std::fmod(ang + M_PI, 2 * M_PI);
+  //   if (out < 0)
+  //       out += 2 * M_PI;
+  //   return out - M_PI;  
+  // }
+
 
   void update() {
     model.update(thruster_input);
@@ -76,6 +84,10 @@ class DynamicModelSim : public rclcpp::Node {
     double pitch = normalize_angle(out.eta[4]);  // position in y
     double yaw = normalize_angle(out.eta[5]);  // position in y
 
+    // double roll = out.eta[3];  // position in y
+    // double pitch = out.eta[4];  // position in y
+    // double yaw = out.eta[5];  // position in y
+
     geometry_msgs::msg::Pose pose;
     nav_msgs::msg::Odometry odom;
 
@@ -85,6 +97,7 @@ class DynamicModelSim : public rclcpp::Node {
 
     tf2::Quaternion qq;
     qq.setRPY(roll, pitch, yaw);
+    //qq.normalize();
 
     pose.orientation.w = qq.getW();
     pose.orientation.x = qq.getX();

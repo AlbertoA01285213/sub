@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+  <node pkg="sub" exec="pid.py" name="pid"/>
+
+  <node pkg="sub" exec="maquina_estados_1.py" name="maquina_estados"/>
+
+  <node pkg="sub" exec="obj_cuadrado_1.py" name="objetivo_1"/>
+  <node pkg="sub" exec="obj_cuadrado_2.py" name="objetivo_2"/>
+  <node pkg="sub" exec="obj_cuadrado_3.py" name="objetivo_3"/>
+  <node pkg="sub" exec="obj_cuadrado_4.py" name="objetivo_4"/>
+
+  <node pkg="sub" exec="visualizador.py" name="visualizador"/>
+  <node pkg="sub" exec="dynamic_model_uuv" name="modelo_dinamico"/>
+
+
+  <node name="rviz2" pkg="rviz2" exec="rviz2" args="-d $(find-pkg-share sub)/rviz/pid.rviz"/>
+</launch>

@@ -39,6 +39,13 @@ install(PROGRAMS
   src/visualizador.py
   src/objetivo.py
   src/joystick.py
+
+  src/maquina_estados_1.py
+
+  src/misiones/cuadrado/obj_cuadrado_1.py
+  src/misiones/cuadrado/obj_cuadrado_2.py
+  src/misiones/cuadrado/obj_cuadrado_3.py
+  src/misiones/cuadrado/obj_cuadrado_4.py
   DESTINATION lib/${PROJECT_NAME})
 
 # ============= Para nodos c++ ========================

@@ -23,7 +23,7 @@ class TeleopControl(Node):
         self.vel_msg = Pose()
 
         self.multiplicador_tras = 100
-        self.multiplicador_rota = 10
+        self.multiplicador_rota = 2
 
         self.joy = Float64MultiArray()
         self.joy.data = [0.0]*6
