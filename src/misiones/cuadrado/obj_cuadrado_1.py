@@ -23,30 +23,61 @@ class Init(Node):
     def estado_callback(self, msg):
         self.estado_num = msg.data
 
-
     def mision(self):
         if self.estado_num == 0:
-            self.publish_pose()
+            roll = radians(0.0)
+            pitch = radians(0.0)
+            yaw = radians(0.0)
+            x,y,z,w = quaternion_from_euler(roll, pitch, yaw)
+            self.posicion_objetivo.position.x = 0.0
+            self.posicion_objetivo.position.y = 0.0
+            self.posicion_objetivo.position.z = -1.0
+            self.posicion_objetivo.orientation.x = x
+            self.posicion_objetivo.orientation.y = y
+            self.posicion_objetivo.orientation.z = z
+            self.posicion_objetivo.orientation.w = w
 
-        else:
-            pass
+        if self.estado_num == 1:
+            roll = radians(0.0)
+            pitch = radians(0.0)
+            yaw = radians(0.0)
+            x,y,z,w = quaternion_from_euler(roll, pitch, yaw)
+            self.posicion_objetivo.position.x = 2.0
+            self.posicion_objetivo.position.y = 0.0
+            self.posicion_objetivo.position.z = -1.0
+            self.posicion_objetivo.orientation.x = x
+            self.posicion_objetivo.orientation.y = y
+            self.posicion_objetivo.orientation.z = z
+            self.posicion_objetivo.orientation.w = w
 
-    def publish_pose(self):
-        roll = radians(0.0)
-        pitch = radians(0.0)
-        yaw = radians(0.0)
+        if self.estado_num == 2:
+            roll = radians(0.0)
+            pitch = radians(0.0)
+            yaw = radians(90.0)
+            x,y,z,w = quaternion_from_euler(roll, pitch, yaw)
+            self.posicion_objetivo.position.x = 2.0
+            self.posicion_objetivo.position.y = 2.0
+            self.posicion_objetivo.position.z = -1.0
+            self.posicion_objetivo.orientation.x = x
+            self.posicion_objetivo.orientation.y = y
+            self.posicion_objetivo.orientation.z = z
+            self.posicion_objetivo.orientation.w = w
 
-        x,y,z,w = quaternion_from_euler(roll, pitch, yaw)
+        if self.estado_num == 3:
+            roll = radians(0.0)
+            pitch = radians(0.0)
+            yaw = radians(180.0)
+            x,y,z,w = quaternion_from_euler(roll, pitch, yaw)
+            self.posicion_objetivo.position.x = 0.0
+            self.posicion_objetivo.position.y = 2.0
+            self.posicion_objetivo.position.z = -1.0
+            self.posicion_objetivo.orientation.x = x
+            self.posicion_objetivo.orientation.y = y
+            self.posicion_objetivo.orientation.z = z
+            self.posicion_objetivo.orientation.w = w
 
-        self.posicion_objetivo.position.x = 0.0
-        self.posicion_objetivo.position.y = 0.0
-        self.posicion_objetivo.position.z = -1.0
-        self.posicion_objetivo.orientation.x = x
-        self.posicion_objetivo.orientation.y = y
-        self.posicion_objetivo.orientation.z = z
-        self.posicion_objetivo.orientation.w = w
-        
         self.objetivo_pub.publish(self.posicion_objetivo)
+
 
 def main(args=None):
     rclpy.init(args=args)
